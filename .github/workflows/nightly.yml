@@ -32,7 +32,7 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
     
 
     - name: Setup build environment
@@ -124,7 +124,7 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
     
     - name: Install Valgrind
       run: sudo apt-get update && sudo apt-get install -y valgrind
@@ -166,7 +166,7 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
     
     - name: Install profiling tools
       run: sudo apt-get update && sudo apt-get install -y linux-tools-common linux-tools-$(uname -r)
